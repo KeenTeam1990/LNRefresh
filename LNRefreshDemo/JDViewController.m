@@ -97,6 +97,7 @@ static NSUInteger num = 0;
         [wself loadMoreRefresh];
     }];
     self.tableView.ln_footer.autoBack = YES;
+    
     [self.tableView addPullToRefresh:[LNHeaderJDAnimator createAnimator] block:^{
     [wself pullToRefresh];
     }];
